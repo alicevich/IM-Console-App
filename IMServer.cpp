@@ -34,7 +34,6 @@ struct ThreadArgs
 const int MAX_USERS = 50;
 User users[MAX_USERS];
 
-
 void initializeUsersList(); 
 void* threadMain(void* args); 
 void processLogin(int clientSock); 
@@ -57,7 +56,6 @@ string readFromClient(int sock);
 void setUserInTalkMode(int clientSock);
 void undoUserInTalkMode(int clientSock);
 bool isInTalkMode(string receiverName);
-
 
 int main(int argc, char * argv[])
 {
